@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Example</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="200"></canvas>
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+
+  context.fillStyle = 'blue';
+  context.fillRect(10, 10, 100, 100);
+
+  // In the case of canvas, there's no flush() method.
+  // The browser handles rendering automatically.
+</script>
+</body>
+</html>
